@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Student Question Links</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+</head>
+
+<body>
+    <h1>Student Question Links</h1>
+    <div>
+        <label for="student">Select Student</label>
+        <select id="student">
+            <option value="">-- Select --</option>
+            <option value="3A 01 CHAN FAYE">3A 01 CHAN FAYE</option> 
+            <option value="3A 02 CHAN HO YU PEONY">3A 02 CHAN HO YU PEONY</option> 
+            <option value="3A 03 CHAN SUMMER">3A 03 CHAN SUMMER</option> 
+            <option value="3A 04 CHAN WING HEI HEIDY">3A 04 CHAN WING HEI HEIDY</option> 
+            <option value="3A 05 CHEN YUEN CHING DAISY">3A 05 CHEN YUEN CHING DAISY</option> 
+            <option value="3A 06 CHENG FEI YEUNG ANGEL">3A 06 CHENG FEI YEUNG ANGEL</option> 
+            <option value="3A 07 CHENG HOI CHING BLAIRE">3A 07 CHENG HOI CHING BLAIRE</option> 
+            <option value="3A 08 CHEUNG SZE WAI CHLOE">3A 08 CHEUNG SZE WAI CHLOE</option> 
+            <option value="3A 09 CHU YAN KIU JANIS">3A 09 CHU YAN KIU JANIS</option> 
+            <option value="3A 10 FUNG SHERRY SUET YING">3A 10 FUNG SHERRY SUET YING</option> 
+            <option value="3A 11 HAU YUI YIN YNEZ">3A 11 HAU YUI YIN YNEZ</option> 
+            <option value="3A 12 HONG JING JANE">3A 12 HONG JING JANE</option> 
+            <option value="3A 13 HUI TUEN YI ALISON">3A 13 HUI TUEN YI ALISON</option> 
+            <option value="3A 14 LAM CHAU TUNG NOVIA">3A 14 LAM CHAU TUNG NOVIA</option> 
+            <option value="3A 15 LAU YING WAI JAMIE">3A 15 LAU YING WAI JAMIE</option> 
+            <option value="3A 16 LEE CHOI MING CLAIRE">3A 16 LEE CHOI MING CLAIRE</option> 
+            <option value="3A 17 LEE O KA KARLIE">3A 17 LEE O KA KARLIE</option> 
+            <option value="3A 18 LEE WAI TING VANESSA">3A 18 LEE WAI TING VANESSA</option> 
+            <option value="3A 19 LEONG SUM YUET CANDY">3A 19 LEONG SUM YUET CANDY</option> 
+            <option value="3A 20 LI YAN TUNG JESSICA">3A 20 LI YAN TUNG JESSICA</option> 
+            <option value="3A 21 LO SUM YEE EUNICE">3A 21 LO SUM YEE EUNICE</option> 
+            <option value="3A 22 MA LOK YI VENUS">3A 22 MA LOK YI VENUS</option> 
+            <option value="3A 23 PUN LOK YI LOUISE">3A 23 PUN LOK YI LOUISE</option> 
+            <option value="3A 24 TAM HONG YIU HAYLEY">3A 24 TAM HONG YIU HAYLEY</option> 
+            <option value="3A 25 TSANG TSZ MAN SHARON">3A 25 TSANG TSZ MAN SHARON</option> 
+            <option value="3A 26 TSANG WING TUNG SHARIS">3A 26 TSANG WING TUNG SHARIS</option> 
+            <option value="3A 27 TSE CHO KIU EUNICE">3A 27 TSE CHO KIU EUNICE</option> 
+            <option value="3A 28 WONG CHING KIU FAY">3A 28 WONG CHING KIU FAY</option> 
+            <option value="3A 29 WONG KWAN CHING EDNA">3A 29 WONG KWAN CHING EDNA</option> 
+            <option value="3A 30 ZHONG XIAOXIAN DONNA">3A 30 ZHONG XIAOXIAN DONNA</option> 
+            <option value="3A 31 ZHOU JIA YI ALISA">3A 31 ZHOU JIA YI ALISA</option>
+            <option value="3B 01 CHAN TIN YU TIFFANY">3B 01 CHAN TIN YU TIFFANY</option> 
+            <option value="3B 02 CHAN TSE CHING CLAUDIA">3B 02 CHAN TSE CHING CLAUDIA</option> 
+            <option value="3B 03 CHEUNG CHI KA ALISON">3B 03 CHEUNG CHI KA ALISON</option> 
+            <option value="3B 04 CHOW HIU TUNG EMILY">3B 04 CHOW HIU TUNG EMILY</option> 
+            <option value="3B 05 CHUI MAN YU CINDY">3B 05 CHUI MAN YU CINDY</option> 
+            <option value="3B 06 CHUNG CHEUK TING VALERIE">3B 06 CHUNG CHEUK TING VALERIE</option> 
+            <option value="3B 07 FONG HIU YAN LENA">3B 07 FONG HIU YAN LENA</option> 
+            <option value="3B 08 HE KAI YEE JOEY">3B 08 HE KAI YEE JOEY</option> 
+            <option value="3B 09 HO YUI YIN GABRIELLE">3B 09 HO YUI YIN GABRIELLE</option> 
+            <option value="3B 10 KWAN HOI KI ABBY">3B 10 KWAN HOI KI ABBY</option> 
+            <option value="3B 11 LAI LONG CHING ANDREA">3B 11 LAI LONG CHING ANDREA</option> 
+            <option value="3B 12 LAI YUET YAN CHASKI">3B 12 LAI YUET YAN CHASKI</option> 
+            <option value="3B 13 LAM CHI YU AUDREY">3B 13 LAM CHI YU AUDREY</option> 
+            <option value="3B 14 LAM CICELY CICELY">3B 14 LAM CICELY CICELY</option> 
+            <option value="3B 15 LAM HIU CHING KITTY">3B 15 LAM HIU CHING KITTY</option> 
+            <option value="3B 16 LAM KIT YI KELLY">3B 16 LAM KIT YI KELLY</option> 
+            <option value="3B 17 LAM WAI YAN PEONY">3B 17 LAM WAI YAN PEONY</option> 
+            <option value="3B 18 MOK WING LAM VALERIE">3B 18 MOK WING LAM VALERIE</option> 
+            <option value="3B 19 NG TIN YING GLADYS">3B 19 NG TIN YING GLADYS</option> 
+            <option value="3B 20 SO TSZ CHING CHINNI">3B 20 SO TSZ CHING CHINNI</option> 
+            <option value="3B 21 TAM HEI MAN ISABELLA">3B 21 TAM HEI MAN ISABELLA</option> 
+            <option value="3B 22 TANG HAU YAU PHOEBE">3B 22 TANG HAU YAU PHOEBE</option> 
+            <option value="3B 23 TANG TSZ YAN DORA">3B 23 TANG TSZ YAN DORA</option> 
+            <option value="3B 24 TSAI MING KA CHERRY">3B 24 TSAI MING KA CHERRY</option> 
+            <option value="3B 25 TSANG YUI NI RITA">3B 25 TSANG YUI NI RITA</option> 
+            <option value="3B 26 WAN HOI CHING LIANE">3B 26 WAN HOI CHING LIANE</option> 
+            <option value="3B 27 WONG HOH HOH COCO">3B 27 WONG HOH HOH COCO</option> 
+            <option value="3B 28 WONG TSZ YAN JESSICA">3B 28 WONG TSZ YAN JESSICA</option> 
+            <option value="3B 29 YU TSZ LAM JESSICA">3B 29 YU TSZ LAM JESSICA</option>
+            <option value="3C 01 CHAN KA IU CHLOE">3C 01 CHAN KA IU CHLOE</option> 
+            <option value="3C 02 CHAN KEI CHO SOPHIA">3C 02 CHAN KEI CHO SOPHIA</option> 
+            <option value="3C 03 CHAU PUI YIN JENNA">3C 03 CHAU PUI YIN JENNA</option> 
+            <option value="3C 04 CHAU YU KA EMILY">3C 04 CHAU YU KA EMILY</option> 
+            <option value="3C 05 CHENG KWAN KWAN KENIX">3C 05 CHENG KWAN KWAN KENIX</option> 
+            <option value="3C 06 CHENG YOKO">3C 06 CHENG YOKO</option> 
+            <option value="3C 07 FOK AIMEE">3C 07 FOK AIMEE</option> 
+            <option value="3C 08 FU HIU TUNG GLADYS">3C 08 FU HIU TUNG GLADYS</option> 
+            <option value="3C 09 HO HIU LAM ABBY">3C 09 HO HIU LAM ABBY</option> 
+            <option value="3C 10 KWOK WAI YU WENDY">3C 10 KWOK WAI YU WENDY</option> 
+            <option value="3C 11 LAI TSZ WAI ALICE">3C 11 LAI TSZ WAI ALICE</option> 
+            <option value="3C 12 LAI YAT LAAM CHELSY">3C 12 LAI YAT LAAM CHELSY</option> 
+            <option value="3C 13 LAM HO YAN AMELIA">3C 13 LAM HO YAN AMELIA</option> 
+            <option value="3C 14 LAU CHING TUNG BETTY">3C 14 LAU CHING TUNG BETTY</option> 
+            <option value="3C 15 LEE LAI HEI HAILEY">3C 15 LEE LAI HEI HAILEY</option> 
+            <option value="3C 16 LEE YAN KIU TIFFANY">3C 16 LEE YAN KIU TIFFANY</option> 
+            <option value="3C 17 LEUNG SHUN YAN YAN">3C 17 LEUNG SHUN YAN YAN</option> 
+            <option value="3C 18 LI HOI LAM HELEN">3C 18 LI HOI LAM HELEN</option> 
+            <option value="3C 19 LO SUM YI SAMMI">3C 19 LO SUM YI SAMMI</option> 
+            <option value="3C 20 MAK CHUN SZE VANESSA">3C 20 MAK CHUN SZE VANESSA</option> 
+            <option value="3C 21 NG YIN WAI LILY">3C 21 NG YIN WAI LILY</option> 
+            <option value="3C 22 NGAI CHEUK YING CHERAINE">3C 22 NGAI CHEUK YING CHERAINE</option> 
+            <option value="3C 23 PANG ELMA">3C 23 PANG ELMA</option> 
+            <option value="3C 24 TANG HOI KI HEIDI">3C 24 TANG HOI KI HEIDI</option> 
+            <option value="3C 25 TSE KAI LING CHERRY">3C 25 TSE KAI LING CHERRY</option> 
+            <option value="3C 26 TSE WAI LAM VANI">3C 26 TSE WAI LAM VANI</option> 
+            <option value="3C 27 WONG YIN TING VENUS">3C 27 WONG YIN TING VENUS</option> 
+            <option value="3C 28 YAN CHING CHARLOTTE">3C 28 YAN CHING CHARLOTTE</option> 
+            <option value="3C 29 YEUNG HOI CHING CLAUDIA">3C 29 YEUNG HOI CHING CLAUDIA</option>
+            <option value="3D 01 CHENG KA YAN AUDREY">3D 01 CHENG KA YAN AUDREY</option> 
+            <option value="3D 02 CHOI WING SUM VINCY">3D 02 CHOI WING SUM VINCY</option> 
+            <option value="3D 03 FONG HEI NAM HELEN">3D 03 FONG HEI NAM HELEN</option> 
+            <option value="3D 04 GAO RUICAN RACHEL">3D 04 GAO RUICAN RACHEL</option> 
+            <option value="3D 05 HON MARITA JANE">3D 05 HON MARITA JANE</option> 
+            <option value="3D 06 HUI YAN WA KIBI">3D 06 HUI YAN WA KIBI</option> 
+            <option value="3D 07 HUNG PUI YU AGNES">3D 07 HUNG PUI YU AGNES</option> 
+            <option value="3D 08 LAI TSZ YING YOLANDA">3D 08 LAI TSZ YING YOLANDA</option> 
+            <option value="3D 09 LAM CHUI HEI TRACY">3D 09 LAM CHUI HEI TRACY</option> 
+            <option value="3D 10 LEUNG PO YUET QUEENIE">3D 10 LEUNG PO YUET QUEENIE</option> 
+            <option value="3D 11 LEUNG SOPHIA">3D 11 LEUNG SOPHIA</option> 
+            <option value="3D 12 LI CHEUK YU HAYLIE">3D 12 LI CHEUK YU HAYLIE</option> 
+            <option value="3D 13 LI CHIN HUI CHERISE">3D 13 LI CHIN HUI CHERISE</option> 
+            <option value="3D 14 LIANG WING YI TERESA">3D 14 LIANG WING YI TERESA</option> 
+            <option value="3D 15 LIU HIU LAM LETTY">3D 15 LIU HIU LAM LETTY</option> 
+            <option value="3D 16 LIU SZE YU CHERRY">3D 16 LIU SZE YU CHERRY</option> 
+            <option value="3D 17 LIU ZI QIAN ELENI">3D 17 LIU ZI QIAN ELENI</option> 
+            <option value="3D 18 MA MING KWAN RACHAEL">3D 18 MA MING KWAN RACHAEL</option> 
+            <option value="3D 19 MAK PING TING DIKKO">3D 19 MAK PING TING DIKKO</option> 
+            <option value="3D 20 NG WING KIU KAYLIE">3D 20 NG WING KIU KAYLIE</option> 
+            <option value="3D 21 NG WING SUM CHLOE">3D 21 NG WING SUM CHLOE</option> 
+            <option value="3D 22 NG WING YAN KAREN">3D 22 NG WING YAN KAREN</option> 
+            <option value="3D 23 SHU YING YING COCO">3D 23 SHU YING YING COCO</option> 
+            <option value="3D 24 SIU YUET CHING COURTNEY">3D 24 SIU YUET CHING COURTNEY</option> 
+            <option value="3D 25 WAI TSZ MAN CHERRY">3D 25 WAI TSZ MAN CHERRY</option> 
+            <option value="3D 26 WAN JEANNE">3D 26 WAN JEANNE</option> 
+            <option value="3D 27 WONG KYLIE">3D 27 WONG KYLIE</option> 
+            <option value="3D 28 YIP KAM LING JOYCE">3D 28 YIP KAM LING JOYCE</option> 
+            <option value="3D 29 YU YUET JAMIE">3D 29 YU YUET JAMIE</option>
+            <option value="3E 01 CHAN CHE CHUN VALERIE">3E 01 CHAN CHE CHUN VALERIE</option> 
+            <option value="3E 02 CHAN TING HUEN VENUS">3E 02 CHAN TING HUEN VENUS</option> 
+            <option value="3E 03 CHEN YANTONG MARY">3E 03 CHEN YANTONG MARY</option> 
+            <option value="3E 04 CHING MAN YING NICOLE">3E 04 CHING MAN YING NICOLE</option> 
+            <option value="3E 05 CHOW HOI CHING ASHLEY">3E 05 CHOW HOI CHING ASHLEY</option> 
+            <option value="3E 06 FANG LOK YIU YOLANDA">3E 06 FANG LOK YIU YOLANDA</option> 
+            <option value="3E 07 HO SUM KIU SUMMER">3E 07 HO SUM KIU SUMMER</option> 
+            <option value="3E 08 HUANG YIJING ELAINE">3E 08 HUANG YIJING ELAINE</option> 
+            <option value="3E 09 IHSAN MAIRA">3E 09 IHSAN MAIRA</option> 
+            <option value="3E 10 LAU YAN YIN CHLOE">3E 10 LAU YAN YIN CHLOE</option> 
+            <option value="3E 11 LEE HIU LAAM HAILEY">3E 11 LEE HIU LAAM HAILEY</option> 
+            <option value="3E 12 LEUNG CHEUK YIN CHELSIE">3E 12 LEUNG CHEUK YIN CHELSIE</option> 
+            <option value="3E 13 LO NGA LAI LILY">3E 13 LO NGA LAI LILY</option> 
+            <option value="3E 14 LO SIU CHING VIVIAN">3E 14 LO SIU CHING VIVIAN</option> 
+            <option value="3E 15 LUI CHEUK KIU ANNA">3E 15 LUI CHEUK KIU ANNA</option> 
+            <option value="3E 16 MAK HIU CHING LOUISA">3E 16 MAK HIU CHING LOUISA</option> 
+            <option value="3E 17 MO CHING YEE IRENE">3E 17 MO CHING YEE IRENE</option> 
+            <option value="3E 18 NG PUI CHI VINCCI">3E 18 NG PUI CHI VINCCI</option> 
+            <option value="3E 19 NG SIN YEE CINDY">3E 19 NG SIN YEE CINDY</option> 
+            <option value="3E 20 SHU NGO SUN ANGEL">3E 20 SHU NGO SUN ANGEL</option> 
+            <option value="3E 21 TSAI WAI KIU VICKY">3E 21 TSAI WAI KIU VICKY</option> 
+            <option value="3E 22 WONG HIU YI KITTY">3E 22 WONG HIU YI KITTY</option> 
+            <option value="3E 23 WU YUET HEI HAZEL">3E 23 WU YUET HEI HAZEL</option> 
+            <option value="3E 24 XIE TSZ CHING COCO">3E 24 XIE TSZ CHING COCO</option> 
+            <option value="3E 25 YAM SI KI CHRISTINA">3E 25 YAM SI KI CHRISTINA</option> 
+            <option value="3E 26 YANG CHIN MAN EMILY">3E 26 YANG CHIN MAN EMILY</option> 
+            <option value="3E 27 YU KA PO JANISA">3E 27 YU KA PO JANISA</option> 
+            <option value="3E 28 YUEN YAT CHI FIONA">3E 28 YUEN YAT CHI FIONA</option> 
+            <option value="3E 29 ZHOU KA YIU SANDY">3E 29 ZHOU KA YIU SANDY</option>
+
+        </select>
+        <button id="get-link">Get Question Link</button>
+
+    </div>
+    <div id="link-container"></div>
+    <div id="link-container_s"></div>
+
+    <script>
+		$(document).ready(function() {
+			$("#get-link").click(function() {
+				var student = $("#student").val();
+				if (student != "") {
+					$.get("https://htcskhtc.github.io/F3QuestionLink/data.csv", function(data) {
+						var questionLinks = $.csv.toObjects(data);
+						var link = "";
+                        var slink = "";
+						$.each(questionLinks, function(index, questionLink) {
+							if (questionLink.StdName == student) {
+								link = questionLink.QuestionLink;
+                                slink = questionLink.SolLink;
+								return false;
+							}
+						});
+						if (link != "" && slink !="") {
+							$("#link-container").html("<a href='" + link + "?student=" + student + "' target='_blank'>Question Link for " + student + "</a>");
+                            $("#link-container_s").html("<a href='" + slink + "?student=" + student + "' target='_blank'>Solution Link</a>");
+						} else {
+							$("#link-container").html("Question link not found for selected student.");
+                            $("#link-container_s").html("Solution link not found for selected student.");
+						}
+					});
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>
